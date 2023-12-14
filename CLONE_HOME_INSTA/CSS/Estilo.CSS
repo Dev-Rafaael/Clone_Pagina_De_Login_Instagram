@@ -1,0 +1,255 @@
+
+/* GERAL */
+ *{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Helvetica; 
+ 
+}
+body{
+  background-color: antiquewhite;
+ 
+}
+
+.main-container  {
+  display: flex;
+  margin-top: 60px;
+  text-align: center; 
+
+}
+.banner-container,
+.form-container{
+  flex: 1 1 0;
+  width: 50%;
+}
+
+ .banner-container img{ 
+  width: 100%;
+  max-width: 380px;
+}
+.form-container{
+  margin-left: -230px;
+}
+/* LOGIN FORM */
+.form-box{
+  margin-top: 10px;
+  border: 1px solid rgb(153, 153, 153);
+  height: 400px;
+  width: 350px;
+  padding:20px  ;
+}
+.form-box img{
+  width: 160px;
+  height: 51px;
+  margin: 30px auto 12px;
+} 
+.login-form {
+  margin-top: 20px;
+}
+.login-form input{
+  display:block;
+  margin: 10px auto;
+  width: 250px;
+  height: 32px;
+  border-color: rgb(184, 181, 181);
+  border-radius: 4px ;
+}
+.login-form input[type=submit]{
+  background-color: rgb(32, 83, 212);
+  color: wheat;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 5px;
+  margin: 13px auto;
+  padding: 5px 90px;
+  cursor: pointer;
+  opacity: 0.9;
+}
+.login-form input[type=submit]:hover{
+  opacity: 1;
+}
+
+/* SEPARADOR */
+.form-box .separator{
+  margin-top: 25px; 
+}
+
+.line{
+  margin: auto 30px;
+  border: 1px solid rgb(140, 137, 137);
+}
+.separator span{
+  top: -9px;
+  padding: 5px;
+  background-color: antiquewhite;
+  position: relative;
+}
+/* FACEBOOK LOGIN */
+.other-links{
+  margin: 24px auto;
+
+}
+#facebook-login{
+  margin-bottom: 30px;
+  text-align: center; 
+ 
+}
+#facebook-login a{
+  text-decoration: none;
+  font-weight: bold;
+  cursor: pointer; 
+ 
+}
+#facebook-login img{
+  width: 20px;
+  margin: -18px  auto;
+}
+#facebook-login span {
+  font-weight: bold;
+  
+}
+/* FORGOT PASSWORD */
+.form-box .not_senha a{
+  font-weight: bold;
+  text-decoration: none;
+}
+/* CADASTRO */
+.cadastro{
+  border: 1px solid rgb(128, 127, 127);
+  width: 352px;
+  height: 60px;
+  margin-top: 15px;
+  padding: 15px;
+}
+.cadastro span {
+  padding: 17px;
+}
+ #register-container p {
+    margin: 14px;
+} 
+.cadastro a {
+text-decoration: none;
+font-weight: bold;
+}
+
+
+/* GET APP */
+.dowload{
+  width: 400px;
+  text-align: center;
+  margin-top: 10px;
+  margin-left: -18px;
+}
+.dowload p{
+ font-size: 23px;
+}
+.dowload a{
+  text-decoration: none;
+}
+.dowload img{
+  width: 160px;
+} 
+
+
+/* RODAPE */
+footer{
+  margin-top: 50px;
+  text-align: center;
+  text-decoration: none;
+  color: gray;
+  margin-bottom: 40px;
+}
+
+ .rodape li{
+ display: inline-block;
+  margin-left: 10px;
+  text-decoration: none;
+  margin-bottom: 30px;
+  
+} 
+.rodape li a{
+  text-decoration: none;
+  color: gray;
+}
+
+
+/* RESPONSIVIDADE */
+
+@media (max-width: 1100px) {
+  .form-container{
+      margin-left: -70px;
+  }
+  .dowload{
+    width: 400px;
+    text-align: center;
+    margin-top: 10px;
+    margin-left: -29px;
+  }
+}
+  
+
+/* tablet 900px */
+@media (max-width: 900px) {
+  .form-container{
+    margin-left: 9px;
+}
+  .cadastro{
+    border: 1px solid rgb(128, 127, 127);
+    width: 350px;
+    height: 60px; 
+    padding: 15px;
+  }
+  .dowload p{
+   font-size: 23px;
+  }
+  .dowload a{
+  text-decoration: none;
+    }
+  .dowload img{
+    width: 140px;
+  
+  }
+
+}
+
+@media( max-width:768px){
+  
+.main-container  {
+  margin: 20px ;
+  max-width: 550px;
+}
+.form-container{
+ margin-right: -100px;
+
+}
+.banner-container img{ 
+  width: 100%;
+  max-width: 300px;
+}
+.rodape li{
+  display: inline-block;
+   margin-left: 3px;
+   text-decoration: none;
+   margin-bottom: 30px;
+  font-size: 13px;
+ } 
+}
+/* celular 576px */
+@media( max-width:576px){
+.banner-container img{ 
+display: none;
+  }
+  .form-container{
+   margin-top: 50px;
+  margin-right: 170px;
+   
+   }
+   .rodape li{
+    display: inline-block;
+     margin-left: 2px;
+     text-decoration: none;
+     margin-bottom: 30px;
+    font-size: 10px;
+   } 
+}
